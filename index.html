@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Translator by simran vaswani</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea class="from-text" placeholder="Enter text"></textarea>
+        <textarea class="to-text" readonly disabled placeholder="Translation"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <i class="fas fa-volume-up" id="from-sound"></i>
+            <i class="fas fa-copy" id="from-copy"></i>
+          </div>
+          <select class="from-lang"></select>
+        </li>
+        <li class="exchange">
+          <i class="fas fa-exchange-alt"></i>
+        </li>
+        <li class="row to">
+          <select class="to-lang"></select>
+          <div class="icons">
+            <i class="fas fa-volume-up" id="to-sound"></i>
+            <i class="fas fa-copy" id="to-copy"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button class="translate-btn">Translate Text</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
